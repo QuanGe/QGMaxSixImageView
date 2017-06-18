@@ -1,0 +1,13 @@
+source 'https://github.com/CocoaPods/Specs.git'
+platform :ios, '8.0'
+
+def pods
+
+pod 'Masonry'
+pod 'AFNetworking', '~> 2.0'
+pod 'QGMaxSixImageView' , path: '../..'
+end
+
+target 'QGMaxSixImageView' do
+    pods
+end

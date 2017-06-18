@@ -1,0 +1,25 @@
+{
+  "name": "QGMaxSixImageView",
+  "version": "0.1.0",
+  "platforms": {
+    "ios": "7.0"
+  },
+  "license": "MIT",
+  "summary": "the view has max six image view",
+  "homepage": "https://github.com/QuanGe/QGMaxSixImageView",
+  "authors": {
+    "QuanGe": "zhang_ru_quan@163.com"
+  },
+  "source": {
+    "git": "https://github.com/QuanGe/QGMaxSixImageView.git",
+    "tag": "0.1.0"
+  },
+  "description": "the view has max six image view",
+  "frameworks": "QuartzCore",
+  "source_files": "QGMaxSixImageView/*.{h,m}",
+  "resources": [
+    "QGMaxSixImageView/*.{xib}"
+  ],
+  "preserve_paths": "Demo",
+  "requires_arc": true
+}

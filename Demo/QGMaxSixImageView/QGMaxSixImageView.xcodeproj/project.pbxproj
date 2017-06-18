@@ -1,0 +1,399 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4B5067F21EF673E500DB6284 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B5067F11EF673E500DB6284 /* main.m */; };
+		4B5067F51EF673E500DB6284 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B5067F41EF673E500DB6284 /* AppDelegate.m */; };
+		4B5067F81EF673E500DB6284 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B5067F71EF673E500DB6284 /* ViewController.m */; };
+		4B5067FB1EF673E500DB6284 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B5067F91EF673E500DB6284 /* Main.storyboard */; };
+		4B5067FD1EF673E500DB6284 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B5067FC1EF673E500DB6284 /* Assets.xcassets */; };
+		4B5068001EF673E500DB6284 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B5067FE1EF673E500DB6284 /* LaunchScreen.storyboard */; };
+		C7D1DDAB4DA9EE9A8E7A27ED /* libPods-QGMaxSixImageView.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F17568FFCBAE00D7AD8C448E /* libPods-QGMaxSixImageView.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		4B5067ED1EF673E500DB6284 /* QGMaxSixImageView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QGMaxSixImageView.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4B5067F11EF673E500DB6284 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4B5067F31EF673E500DB6284 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		4B5067F41EF673E500DB6284 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		4B5067F61EF673E500DB6284 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		4B5067F71EF673E500DB6284 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		4B5067FA1EF673E500DB6284 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4B5067FC1EF673E500DB6284 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4B5067FF1EF673E500DB6284 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4B5068011EF673E500DB6284 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		71449C6F960B983ACC05FEE6 /* Pods-QGMaxSixImageView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QGMaxSixImageView.debug.xcconfig"; path = "Pods/Target Support Files/Pods-QGMaxSixImageView/Pods-QGMaxSixImageView.debug.xcconfig"; sourceTree = "<group>"; };
+		D189934C48CBD8E5C681C66A /* Pods-QGMaxSixImageView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QGMaxSixImageView.release.xcconfig"; path = "Pods/Target Support Files/Pods-QGMaxSixImageView/Pods-QGMaxSixImageView.release.xcconfig"; sourceTree = "<group>"; };
+		F17568FFCBAE00D7AD8C448E /* libPods-QGMaxSixImageView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-QGMaxSixImageView.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4B5067EA1EF673E500DB6284 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C7D1DDAB4DA9EE9A8E7A27ED /* libPods-QGMaxSixImageView.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4B5067E41EF673E500DB6284 = {
+			isa = PBXGroup;
+			children = (
+				4B5067EF1EF673E500DB6284 /* QGMaxSixImageView */,
+				4B5067EE1EF673E500DB6284 /* Products */,
+				4FE0DBEDB58A695051720240 /* Pods */,
+				A20F840D06462FE869DF6F0A /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		4B5067EE1EF673E500DB6284 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4B5067ED1EF673E500DB6284 /* QGMaxSixImageView.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4B5067EF1EF673E500DB6284 /* QGMaxSixImageView */ = {
+			isa = PBXGroup;
+			children = (
+				4B5067F31EF673E500DB6284 /* AppDelegate.h */,
+				4B5067F41EF673E500DB6284 /* AppDelegate.m */,
+				4B5067F61EF673E500DB6284 /* ViewController.h */,
+				4B5067F71EF673E500DB6284 /* ViewController.m */,
+				4B5067F91EF673E500DB6284 /* Main.storyboard */,
+				4B5067FC1EF673E500DB6284 /* Assets.xcassets */,
+				4B5067FE1EF673E500DB6284 /* LaunchScreen.storyboard */,
+				4B5068011EF673E500DB6284 /* Info.plist */,
+				4B5067F01EF673E500DB6284 /* Supporting Files */,
+			);
+			path = QGMaxSixImageView;
+			sourceTree = "<group>";
+		};
+		4B5067F01EF673E500DB6284 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4B5067F11EF673E500DB6284 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4FE0DBEDB58A695051720240 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				71449C6F960B983ACC05FEE6 /* Pods-QGMaxSixImageView.debug.xcconfig */,
+				D189934C48CBD8E5C681C66A /* Pods-QGMaxSixImageView.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		A20F840D06462FE869DF6F0A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F17568FFCBAE00D7AD8C448E /* libPods-QGMaxSixImageView.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4B5067EC1EF673E500DB6284 /* QGMaxSixImageView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4B5068041EF673E500DB6284 /* Build configuration list for PBXNativeTarget "QGMaxSixImageView" */;
+			buildPhases = (
+				59AA5F29C94AA4ED015590E6 /* [CP] Check Pods Manifest.lock */,
+				4B5067E91EF673E500DB6284 /* Sources */,
+				4B5067EA1EF673E500DB6284 /* Frameworks */,
+				4B5067EB1EF673E500DB6284 /* Resources */,
+				562BC7CF43E4212CBED517DF /* [CP] Embed Pods Frameworks */,
+				9C74FBAE63CCB6831249A852 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = QGMaxSixImageView;
+			productName = QGMaxSixImageView;
+			productReference = 4B5067ED1EF673E500DB6284 /* QGMaxSixImageView.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4B5067E51EF673E500DB6284 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = QuanGe;
+				TargetAttributes = {
+					4B5067EC1EF673E500DB6284 = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = WUT8C6U8X9;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 4B5067E81EF673E500DB6284 /* Build configuration list for PBXProject "QGMaxSixImageView" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4B5067E41EF673E500DB6284;
+			productRefGroup = 4B5067EE1EF673E500DB6284 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4B5067EC1EF673E500DB6284 /* QGMaxSixImageView */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4B5067EB1EF673E500DB6284 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B5068001EF673E500DB6284 /* LaunchScreen.storyboard in Resources */,
+				4B5067FD1EF673E500DB6284 /* Assets.xcassets in Resources */,
+				4B5067FB1EF673E500DB6284 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		562BC7CF43E4212CBED517DF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-QGMaxSixImageView/Pods-QGMaxSixImageView-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		59AA5F29C94AA4ED015590E6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		9C74FBAE63CCB6831249A852 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-QGMaxSixImageView/Pods-QGMaxSixImageView-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4B5067E91EF673E500DB6284 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B5067F81EF673E500DB6284 /* ViewController.m in Sources */,
+				4B5067F51EF673E500DB6284 /* AppDelegate.m in Sources */,
+				4B5067F21EF673E500DB6284 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		4B5067F91EF673E500DB6284 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4B5067FA1EF673E500DB6284 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		4B5067FE1EF673E500DB6284 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4B5067FF1EF673E500DB6284 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4B5068021EF673E500DB6284 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4B5068031EF673E500DB6284 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4B5068051EF673E500DB6284 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 71449C6F960B983ACC05FEE6 /* Pods-QGMaxSixImageView.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = WUT8C6U8X9;
+				INFOPLIST_FILE = QGMaxSixImageView/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.quange.QGMaxSixImageView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		4B5068061EF673E500DB6284 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D189934C48CBD8E5C681C66A /* Pods-QGMaxSixImageView.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = WUT8C6U8X9;
+				INFOPLIST_FILE = QGMaxSixImageView/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.quange.QGMaxSixImageView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4B5067E81EF673E500DB6284 /* Build configuration list for PBXProject "QGMaxSixImageView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4B5068021EF673E500DB6284 /* Debug */,
+				4B5068031EF673E500DB6284 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4B5068041EF673E500DB6284 /* Build configuration list for PBXNativeTarget "QGMaxSixImageView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4B5068051EF673E500DB6284 /* Debug */,
+				4B5068061EF673E500DB6284 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4B5067E51EF673E500DB6284 /* Project object */;
+}
