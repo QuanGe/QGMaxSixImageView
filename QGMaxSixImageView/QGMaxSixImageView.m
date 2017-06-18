@@ -48,6 +48,10 @@
     [self  addConstraints:collectionViewConstraints];
 }
 
+- (void)changeItemSpaceingLineColor:(UIColor*)color {
+    self.collectionView.backgroundColor = color;
+}
+
 + (CGFloat)updataImageData:(NSArray*)data uiWidht:(CGFloat)width  imageItemSpacing:(CGFloat)imageItemSpacing {
     NSAssert(data, @"data must not be nil.");
     NSAssert(data.count>0, @"data count must > 0.");
