@@ -355,6 +355,7 @@
         _collectionView = [[UICollectionView alloc] initWithFrame:CGRectZero collectionViewLayout:collectionLayout];
         [_collectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:NSStringFromClass([UICollectionViewCell class])];
         _collectionView.dataSource = self;
+        _collectionView.scrollEnabled = NO;
         _collectionView.backgroundColor = [UIColor lightGrayColor];
         _collectionView.delegate = self;
         _collectionView.translatesAutoresizingMaskIntoConstraints = NO;
