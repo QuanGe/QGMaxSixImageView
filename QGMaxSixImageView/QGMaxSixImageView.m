@@ -12,6 +12,9 @@
 @property (strong,nonatomic) UICollectionView * collectionView;
 @property (strong,nonatomic) NSArray *sourceImageData;
 @property (strong,nonatomic) NSMutableArray *realImageData;
+
+@property (strong,nonatomic) NSLayoutConstraint *imageNumHeightConstraint;
+@property (strong,nonatomic) NSLayoutConstraint *collectionViewBottomConstraint;
 @end
 @implementation QGMaxSixImageView
 
@@ -32,9 +35,13 @@
 
 - (void)initConfig{
     [self addSubview:self.collectionView];
+    [self addSubview:self.imageNumLabel];
     self.imageItemSpacing = 2.0;
     self.realImageData = [NSMutableArray array];
     self.clipsToBounds = YES;
+    self.imageNumHeight = 30;
+    
+    
 }
 
 - (void)layoutSubviews {
@@ -44,15 +51,35 @@
     [collectionViewConstraints addObject:[NSLayoutConstraint constraintWithItem:self.collectionView attribute:NSLayoutAttributeLeft relatedBy:NSLayoutRelationEqual toItem:self attribute:NSLayoutAttributeLeft multiplier:1.0 constant:0.0]];
     [collectionViewConstraints addObject:[NSLayoutConstraint constraintWithItem:self.collectionView attribute:NSLayoutAttributeRight relatedBy:NSLayoutRelationEqual toItem:self attribute:NSLayoutAttributeRight multiplier:1.0 constant:0.0]];
     [collectionViewConstraints addObject:[NSLayoutConstraint constraintWithItem:self.collectionView attribute:NSLayoutAttributeTop relatedBy:NSLayoutRelationEqual toItem:self attribute:NSLayoutAttributeTop multiplier:1.0 constant:0.0]];
-    [collectionViewConstraints addObject:[NSLayoutConstraint constraintWithItem:self.collectionView attribute:NSLayoutAttributeBottom relatedBy:NSLayoutRelationEqual toItem:self attribute:NSLayoutAttributeBottom multiplier:1.0 constant:0.0]];
+    self.collectionViewBottomConstraint = [NSLayoutConstraint constraintWithItem:self.collectionView attribute:NSLayoutAttributeBottom relatedBy:NSLayoutRelationEqual toItem:self attribute:NSLayoutAttributeBottom multiplier:1.0 constant:-self.imageNumHeight];
+    [collectionViewConstraints addObject:self.collectionViewBottomConstraint];
     [self  addConstraints:collectionViewConstraints];
+    
+    NSMutableArray* imageNumViewConstraints = [NSMutableArray arrayWithCapacity:0];
+    
+    [imageNumViewConstraints addObject:[NSLayoutConstraint constraintWithItem:self.imageNumLabel attribute:NSLayoutAttributeLeft relatedBy:NSLayoutRelationEqual toItem:self attribute:NSLayoutAttributeLeft multiplier:1.0 constant:0.0]];
+    [imageNumViewConstraints addObject:[NSLayoutConstraint constraintWithItem:self.imageNumLabel attribute:NSLayoutAttributeRight relatedBy:NSLayoutRelationEqual toItem:self attribute:NSLayoutAttributeRight multiplier:1.0 constant:0.0]];
+    self.imageNumHeightConstraint = [NSLayoutConstraint constraintWithItem:self.imageNumLabel attribute:NSLayoutAttributeHeight relatedBy:NSLayoutRelationEqual toItem:nil attribute:NSLayoutAttributeNotAnAttribute multiplier:0.0f constant:self.imageNumHeight];
+    [imageNumViewConstraints addObject:self.imageNumHeightConstraint];
+    [imageNumViewConstraints addObject:[NSLayoutConstraint constraintWithItem:self.imageNumLabel attribute:NSLayoutAttributeBottom relatedBy:NSLayoutRelationEqual toItem:self attribute:NSLayoutAttributeBottom multiplier:1.0 constant:0.0]];
+    [self  addConstraints:imageNumViewConstraints];
 }
+
+- (void)setImageNumHeight:(NSInteger)imageNumHeight {
+    _imageNumHeight = imageNumHeight;
+    self.imageNumHeightConstraint.constant = imageNumHeight;
+    self.collectionViewBottomConstraint.constant = - imageNumHeight;
+    [self layoutIfNeeded];
+    
+}
+
+
 
 - (void)changeItemSpaceingLineColor:(UIColor*)color {
     self.collectionView.backgroundColor = color;
 }
 
-+ (CGFloat)updataImageData:(NSArray*)data uiWidht:(CGFloat)width  imageItemSpacing:(CGFloat)imageItemSpacing {
++ (CGFloat)updataImageData:(NSArray*)data uiWidht:(CGFloat)width  imageItemSpacing:(CGFloat)imageItemSpacing  imageNumHeight:(NSInteger)imageNumHeight{
     NSAssert(data, @"data must not be nil.");
     NSAssert(data.count>0, @"data count must > 0.");
     CGFloat uiHeight = 0;
@@ -146,7 +173,7 @@
         
     }
     
-    return uiHeight;
+    return uiHeight + imageNumHeight;
 }
 
 + (CGFloat)calculateOneImageItemWithOne:(NSDictionary*)one   uiWidht:(CGFloat)width  imageItemSpacing:(CGFloat)imageItemSpacing{
@@ -267,7 +294,8 @@
         
     }
     [self.collectionView reloadData];
-    return uiHeight;
+
+    return uiHeight + self.imageNumHeight;
 }
 - (CGFloat)calculateOneImageItemWithOne:(NSDictionary*)one   uiWidht:(CGFloat)width{
 
@@ -366,6 +394,18 @@
         
     }
     return _collectionView;
+}
+
+- (UILabel*)imageNumLabel {
+    if (!_imageNumLabel){
+        _imageNumLabel = [[UILabel alloc] init];
+        _imageNumLabel.textAlignment = NSTextAlignmentCenter;
+        _imageNumLabel.backgroundColor = [UIColor whiteColor];
+        _imageNumLabel.translatesAutoresizingMaskIntoConstraints = NO;
+        _imageNumLabel.textColor = [UIColor orangeColor];
+        _imageNumLabel.font = [UIFont systemFontOfSize:12];
+    }
+    return _imageNumLabel;
 }
 
 

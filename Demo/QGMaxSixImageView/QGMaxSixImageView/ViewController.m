@@ -41,6 +41,9 @@
         [imageView setImageWithURL:[NSURL URLWithString:urlStr]];
     };
     [subview changeItemSpaceingLineColor:[UIColor whiteColor]];
+    subview.imageNumHeight = 30;
+    subview.imageNumLabel.text = [NSString stringWithFormat:@"共%@张照片",@(data.count)];
+    
     //dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
         CGFloat height = [subview updateImageData:data uiWidht:self.view.bounds.size.width];
         [subview mas_updateConstraints:^(MASConstraintMaker *make) {
@@ -48,7 +51,7 @@
             make.top.mas_equalTo(70);
             make.height.mas_equalTo(height);
         }];
-    CGFloat h = [QGMaxSixImageView updataImageData:data uiWidht:self.view.bounds.size.width imageItemSpacing:2];
+    CGFloat h = [QGMaxSixImageView updataImageData:data uiWidht:self.view.bounds.size.width imageItemSpacing:2 imageNumHeight:30];
     NSLog(@"%@",@(h));
     //});
     
