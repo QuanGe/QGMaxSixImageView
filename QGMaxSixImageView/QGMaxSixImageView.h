@@ -14,9 +14,6 @@
 @property (strong,nonatomic) UILabel *imageNumLabel;
 @property (assign,nonatomic) NSInteger imageNumHeight;
 
-//you image data must be format [{"width":2896,"height":4344,"orther":@"..."},{"width":2896,"height":4344,"orther":@"..."}]
-//and return the view height
-- (CGFloat)updateImageData:(NSArray*)data uiWidht:(CGFloat)width;
-+ (CGFloat)updataImageData:(NSArray*)data uiWidht:(CGFloat)width imageItemSpacing:(CGFloat)imageItemSpacing imageNumHeight:(NSInteger)imageNumHeight;
+- (void)updateImageData:(NSArray*)data imageSizes:(NSArray *)imageSizes;
 - (void)changeItemSpaceingLineColor:(UIColor*)color;
 @end

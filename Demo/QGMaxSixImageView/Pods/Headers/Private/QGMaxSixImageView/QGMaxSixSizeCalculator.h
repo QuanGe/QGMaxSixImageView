@@ -1,0 +1,1 @@
+../../../../../../QGMaxSixImageView/QGMaxSixSizeCalculator.h

@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import <QGMaxSixImageView.h>
+#import "QGMaxSixSizeCalculator.h"
 #import <Masonry.h>
 #import <UIImageView+AFNetworking.h>
 @interface ViewController ()
@@ -44,15 +45,17 @@
     subview.imageNumHeight = 30;
     subview.imageNumLabel.text = [NSString stringWithFormat:@"共%@张照片",@(data.count)];
     
+    QGMaxSixSizeCalculator *c = [[QGMaxSixSizeCalculator alloc] initWithRowMaximumHeight:200 contentWidth:self.view.bounds.size.width interItemSpacing:2 lineMaximumNum:2];
+    [c calculatorCellItemSizeWithImageSizes:data];
+    
     //dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-        CGFloat height = [subview updateImageData:data uiWidht:self.view.bounds.size.width];
+    [subview updateImageData:data imageSizes:c.sizeCache];
         [subview mas_updateConstraints:^(MASConstraintMaker *make) {
             make.left.right.mas_equalTo(0);
             make.top.mas_equalTo(70);
-            make.height.mas_equalTo(height);
+            make.height.mas_equalTo(c.totalHeight+30);
         }];
-    CGFloat h = [QGMaxSixImageView updataImageData:data uiWidht:self.view.bounds.size.width imageItemSpacing:2 imageNumHeight:30];
-    NSLog(@"%@",@(h));
+
     //});
     
 }
